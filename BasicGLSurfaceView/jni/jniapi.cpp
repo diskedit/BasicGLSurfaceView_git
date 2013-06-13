@@ -77,7 +77,7 @@ JNIEXPORT void JNICALL Java_com_example_android_basicglsurfaceview_BasicGLSurfac
             int lockResult = -22;
 
                 lockResult = ANativeWindow_lock(window, &buffer, NULL);
-                if (lockResult == 0) {    \
+                if (lockResult == 0) {
                   LOG_INFO("ANativeWindow_locked");
                   ANativeWindow_unlockAndPost(window);
                 }
